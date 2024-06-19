@@ -21,6 +21,26 @@ export const Links = [
     }
 ]
 
+export const stats = [
+    {
+        num: 4,
+        text: 'Years of Experience'
+    },
+    {
+        num: 26,
+        text: 'Projects Completed'
+    },
+    {
+        num: 8,
+        text: 'Tecgnologies Learned'
+    },
+    {
+        num: 300,
+        text: 'Code Commits'
+    }
+
+]
+
 
 export const services = [
     {
