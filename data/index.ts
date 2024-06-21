@@ -1,3 +1,7 @@
+import { SiTailwindcss, SiNextdotjs, SiNestjs } from 'react-icons/si';
+import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs, FaPhp } from 'react-icons/fa';
+import { DiMongodb, DiMysql, DiPostgresql, DiDocker, DiNpm, DiGithub } from 'react-icons/di';
+
 export const Links = [
     {
         name: "Home",
@@ -101,5 +105,126 @@ export const about = {
 }
 
 export const experiences = {
-    icon: ''
+    icon: "",
+    title: "My Experience",
+    description: "I have worked with many companies and organizations. I have worked in various roles such as web developer, mobile app developer, and data scientist.",
+    experiences: [
+        {
+            company: "925clo",
+            position: "Full-stack Developer",
+            duartion: "January 2023- April 2024"
+        },
+        {
+            company: "School of RObotics",
+            position: "Web developemnt Instructor",
+            duartion: "June 2023- Dec 2023"
+        },
+        {
+            company: "Zealtech Bd",
+            position: "Web developemnt (Intern)",
+            duartion: "Dec 2022- May 2023"
+        }
+    ]
+}
+
+export const education = {
+    icon: "",
+    title: "My Education",
+    description: "I have completed my Bachelor's degree in Computer Science and Engineering from the University of Dhaka.",
+    info: [
+        {
+            institution: "Programming Hero",
+            degree: "Complete Web Development",
+            duration: "2022"
+        },
+        {
+            institution: "Codeman Bd",
+            degree: "WordPress & Woocommerce",
+            duration: "2021"
+        },
+        {
+            institution: "National University",
+            degree: "Bachelor's in Accounting (Honors)",
+            duration: "2014-2018"
+        },
+        {
+            institution: "Victoria Government College",
+            degree: "Higher Secondary Certificate",
+            duration: "2014-2016"
+        },
+        {
+            institution: "Comilla Zilla School",
+            degree: "Secondary School Certificate",
+            duration: "2010-2011"
+        }
+    ]
+}
+
+
+export const skills = {
+    icon: "",
+    title: "My Skills",
+    description: "I have worked with many technologies. I have worked with these technologies.",
+    info: [
+        {
+            icon: "<FaHtml5/>",
+            name: "html 5"
+        },
+        {
+            icon: "<FaCss3/>",
+            name: "css 3"
+        },
+        {
+            icon: "<FaJs/>",
+            name: "javascript"
+        },
+        {
+            icon: "<FaReact/>",
+            name: "react"
+        },
+        {
+            icon: "<FaFigma/>",
+            name: "figma"
+        },
+        {
+            icon: "<FaNodeJs/>",
+            name: "node.js"
+        },
+        {
+            icon: "<FaPhp/>",
+            name: "php"
+        },
+        {
+            icon: "<DiMongodb/>",
+            name: "mongodb"
+        },
+        {
+            icon: "<DiMysql/>",
+            name: "mysql"
+        },
+        {
+            icon: "<DiPostgresql/>",
+            name: "postgresql"
+        },
+        {
+            icon: "<DiGithub/>",
+            name: "github"
+        },
+        {
+            icon: "<SiTailwindcss/>",
+            name: "tailwindcss"
+        },
+        {
+            icon: "<SiNextdotjs/>",
+            name: "next.js"
+        },
+        {
+            icon: "<SiNestjs/>",
+            name: "nest.js"
+        },
+        {
+            icon: "<SiBootstrap/>",
+            name: "Bootstrap"
+        }
+    ]
 }
