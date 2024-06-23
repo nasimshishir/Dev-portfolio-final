@@ -3,83 +3,14 @@ import React from 'react';
 import { SiTailwindcss, SiNextdotjs, SiNestjs, SiBootstrap } from 'react-icons/si';
 import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs, FaPhp, FaWordpress, FaElementor } from 'react-icons/fa';
 import { DiMongodb, DiMysql, DiGithub } from 'react-icons/di';
+import { BsGithub } from 'react-icons/bs';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { motion } from 'framer-motion'
 import { about, education, experiences, skills } from '@/data';
 
-const skillsData = {
-    icon: "",
-    title: "My Skills",
-    description: "I have worked with many technologies. I have worked with these technologies.",
-    info: [
-        {
-            icon: <FaHtml5 />,
-            name: "html 5"
-        },
-        {
-            icon: <FaCss3 />,
-            name: "css 3"
-        },
-        {
-            icon: <FaWordpress />,
-            name: "wordpress"
-        },
-        {
-            icon: <FaElementor />,
-            name: "elementor"
-        },
-        {
-            icon: <SiTailwindcss />,
-            name: "tailwindcss"
-        },
-        {
-            icon: <SiBootstrap />,
-            name: "bootstrap"
-        },
-        {
-            icon: <FaJs />,
-            name: "javascript"
-        },
-        {
-            icon: <FaReact />,
-            name: "React"
-        },
-        {
-            icon: <FaNodeJs />,
-            name: "node.js"
-        },
-        {
-            icon: <FaPhp />,
-            name: "php"
-        },
-        {
-            icon: <DiMongodb />,
-            name: "mongodb"
-        },
-        {
-            icon: <DiMysql />,
-            name: "mysql"
-        },
-        {
-            icon: <DiGithub />,
-            name: "github"
-        },
-        {
-            icon: <SiNextdotjs />,
-            name: "next.js"
-        },
-        {
-            icon: <SiNestjs />,
-            name: "nest.js"
-        },
-        {
-            icon: <FaFigma />,
-            name: "figma"
-        }
-    ]
-}
+
 
 const Resume = () => {
     return (
@@ -90,7 +21,6 @@ const Resume = () => {
                     animate={{
                         opacity: 1,
                         transition: {
-                            delay: 2.4,
                             duration: 0.4,
                             ease: "easeIn"
                         }
@@ -162,15 +92,15 @@ const Resume = () => {
                                             <h3 className='text-4xl font-bold'>{skills.title}</h3>
                                             <p className='max-w-[600px] text-white/60 mx-auto xl:mx-0'>{skills.description}</p>
                                         </div>
-                                        <ScrollArea className='h-[550px] '>
+                                        <ScrollArea className='h-[400px] '>
                                             <ul className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[20px]'>
-                                                {skillsData.info.map((skill, index) => {
+                                                {skills.info.map((skill, index) => {
                                                     return (
                                                         <li key={index} className='flex flex-col gap-[10px]'>
                                                             <TooltipProvider delayDuration={100}>
                                                                 <Tooltip>
                                                                     <TooltipTrigger className='w-full h-[150px] bg-[#232329] rounded-xl flex items-center justify-center group'>
-                                                                        <div className='text-6xl group-hover:text-accent transition-all duration-300'>{skill.icon}</div>
+                                                                        <div className='text-6xl group-hover:text-accent transition-all duration-300'>< skill.icon /></div>
                                                                     </TooltipTrigger>
                                                                     <TooltipContent>
                                                                         <p className='capitalize'>{skill.name}</p>

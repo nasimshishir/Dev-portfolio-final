@@ -1,6 +1,9 @@
-import { SiTailwindcss, SiNextdotjs, SiNestjs } from 'react-icons/si';
-import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs, FaPhp } from 'react-icons/fa';
-import { DiMongodb, DiMysql, DiPostgresql, DiDocker, DiNpm, DiGithub } from 'react-icons/di';
+import { SiTailwindcss, SiNextdotjs, SiNestjs, SiBootstrap } from 'react-icons/si';
+import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs, FaPhp, FaWordpress, FaElementor } from 'react-icons/fa';
+import { DiMongodb, DiMysql, DiGithub } from 'react-icons/di';
+import { BsGithub } from 'react-icons/bs';
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'
+
 
 export const Links = [
     {
@@ -82,8 +85,16 @@ export const about = {
             fieldValue: "Md Nasim us Sabah Shishir"
         },
         {
+            fieldName: "Nationality",
+            fieldValue: "Bangladeshi"
+        },
+        {
             fieldName: "Phone",
-            fieldValue: "+8801711211131"
+            fieldValue: "(+880) 1679 361 019"
+        },
+        {
+            fieldName: "WhatsApp",
+            fieldValue: "(+880) 1844 675 244"
         },
         {
             fieldName: "Experience",
@@ -94,13 +105,13 @@ export const about = {
             fieldValue: "contact.nasimshishir@gmail.com"
         },
         {
-            fieldName: "Nationality",
-            fieldValue: "Bangladeshi"
+            fieldName: "Status",
+            fieldValue: "Open for Job"
         },
         {
             fieldName: "Languages",
-            fieldValue: "Bangla, English, Hindi, Spanish, Polish"
-        },
+            fieldValue: "Bangla, English, Hindi, Spanish"
+        }
     ]
 }
 
@@ -167,64 +178,119 @@ export const skills = {
     description: "I have worked with many technologies. I have worked with these technologies.",
     info: [
         {
-            icon: "<FaHtml5/>",
+            icon: FaHtml5,
             name: "html 5"
         },
         {
-            icon: "<FaCss3/>",
+            icon: FaCss3,
             name: "css 3"
         },
         {
-            icon: "<FaJs/>",
-            name: "javascript"
+            icon: FaWordpress,
+            name: "wordpress"
         },
         {
-            icon: "<FaReact/>",
-            name: "react"
+            icon: FaElementor,
+            name: "elementor"
         },
         {
-            icon: "<FaFigma/>",
-            name: "figma"
-        },
-        {
-            icon: "<FaNodeJs/>",
-            name: "node.js"
-        },
-        {
-            icon: "<FaPhp/>",
-            name: "php"
-        },
-        {
-            icon: "<DiMongodb/>",
-            name: "mongodb"
-        },
-        {
-            icon: "<DiMysql/>",
-            name: "mysql"
-        },
-        {
-            icon: "<DiPostgresql/>",
-            name: "postgresql"
-        },
-        {
-            icon: "<DiGithub/>",
-            name: "github"
-        },
-        {
-            icon: "<SiTailwindcss/>",
+            icon: SiTailwindcss,
             name: "tailwindcss"
         },
         {
-            icon: "<SiNextdotjs/>",
+            icon: SiBootstrap,
+            name: "bootstrap"
+        },
+        {
+            icon: FaJs,
+            name: "javascript"
+        },
+        {
+            icon: FaReact,
+            name: "React"
+        },
+        {
+            icon: FaNodeJs,
+            name: "node.js"
+        },
+        {
+            icon: FaPhp,
+            name: "php"
+        },
+        {
+            icon: DiMongodb,
+            name: "mongodb"
+        },
+        {
+            icon: DiMysql,
+            name: "mysql"
+        },
+        {
+            icon: BsGithub,
+            name: "github"
+        },
+        {
+            icon: SiNextdotjs,
             name: "next.js"
         },
         {
-            icon: "<SiNestjs/>",
+            icon: SiNestjs,
             name: "nest.js"
         },
         {
-            icon: "<SiBootstrap/>",
-            name: "Bootstrap"
+            icon: FaFigma,
+            name: "figma"
         }
     ]
 }
+
+export const projects = [
+    {
+        num: "01",
+        category: "frontend",
+        title: "project 1",
+        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam at cumque culpa ipsum nesciunt nemo saepe qui?",
+        stack: [{ name: "WordPress", icon: FaWordpress }, { name: "Elementor", icon: FaElementor }, { name: "Crocoblock" }],
+        image: "/assets/work/thumb1.png",
+        liveSite: ""
+    },
+    {
+        num: "02",
+        category: "frontend",
+        title: "project 2",
+        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam at cumque culpa ipsum nesciunt nemo saepe qui?",
+        stack: [{ name: "WordPress", icon: FaWordpress }, { name: "Elementor", icon: FaElementor }],
+        image: "/assets/work/thumb2.png",
+        liveSite: ""
+
+    },
+    {
+        num: "03",
+        category: "fullstack",
+        title: "project 3",
+        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam at cumque culpa ipsum nesciunt nemo saepe qui?",
+        stack: [{ name: "React", icon: FaReact }, { name: "Next.Js", icon: SiNextdotjs }, { name: "Tailwindcss", icon: SiTailwindcss }],
+        image: "/assets/work/thumb3.png",
+        liveSite: "",
+        github: ""
+    }
+
+]
+
+export const contactInfo = [
+    {
+        icon: FaPhoneAlt,
+        title: "Phone",
+        description: "(+880) 1844 675 244"
+    },
+    {
+        icon: FaEnvelope,
+        title: "Email",
+        description: "youremail@gmail.com"
+    },
+    {
+        icon: FaMapMarkerAlt,
+        title: "Address",
+        description: "Code Corner, Tech Town 3500"
+    },
+]
