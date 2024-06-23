@@ -281,16 +281,16 @@ export const contactInfo = [
     {
         icon: FaPhoneAlt,
         title: "Phone",
-        description: "(+880) 1844 675 244"
+        description: "+880 1844 675 244"
     },
     {
         icon: FaEnvelope,
         title: "Email",
-        description: "youremail@gmail.com"
+        description: "contact.nasimshishir@gmail.com"
     },
     {
         icon: FaMapMarkerAlt,
         title: "Address",
-        description: "Code Corner, Tech Town 3500"
+        description: "Darogabari, Cumilla-3500"
     },
 ]
