@@ -38,7 +38,8 @@ const Works = () => {
                         <div className='w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none'>
                             <div className='flex flex-col gap-[30px] h-[50%]'>
                                 <div className='text-8xl leading-none font-extrabold text-transparent text-outline'>{project.num}</div>
-                                <h2 className='text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize'>{project.category} project</h2>
+                                <h2 className='text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize'>{project.category}</h2>
+                                <p className='text-xl font-bold leading-none text-accent'>{project.title}</p>
                                 <p className='text-white/60'>{project.description}</p>
                                 <ul className='flex gap-4'>
                                     {project.stack.map((item, idx) => {
@@ -70,8 +71,8 @@ const Works = () => {
 
                                     {/* Github Button */}
                                     {
-                                        // project.github &&
-                                        <Link href={project.github ? project.github : project.liveSite}>
+                                        project.github &&
+                                        <Link href={project.github}>
                                             <TooltipProvider delayDuration={100}>
                                                 <Tooltip>
                                                     <TooltipTrigger className='w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group'>

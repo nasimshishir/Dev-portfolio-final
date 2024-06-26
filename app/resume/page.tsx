@@ -1,9 +1,5 @@
 'use client'
 import React from 'react';
-import { SiTailwindcss, SiNextdotjs, SiNestjs, SiBootstrap } from 'react-icons/si';
-import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs, FaPhp, FaWordpress, FaElementor } from 'react-icons/fa';
-import { DiMongodb, DiMysql, DiGithub } from 'react-icons/di';
-import { BsGithub } from 'react-icons/bs';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
 import { ScrollArea } from '@/components/ui/scroll-area'

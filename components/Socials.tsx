@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import { FaGithub, FaLinkedinIn, FaYoutube, FaTwitter } from 'react-icons/fa'
+import { FaGithub, FaLinkedinIn, FaInstagram, FaFacebook } from 'react-icons/fa'
 
 interface Social {
     icon: React.ReactNode
@@ -18,15 +18,15 @@ const socials = [
     },
     {
         icon: <FaLinkedinIn />,
-        path: "https://www.linkedin.com/in/nasim-shishir-1b041b1b3/"
+        path: "https://www.linkedin.com/in/nasimshishir/"
     },
     {
-        icon: <FaYoutube />,
-        path: "https://www.youtube.com/channel/UC5n9b4q503_9e40h594f69g"
+        icon: <FaFacebook />,
+        path: "https://www.facebook.com/Shishir171/"
     },
     {
-        icon: <FaTwitter />,
-        path: "https://twitter.com/nasimshishir"
+        icon: <FaInstagram />,
+        path: "https://instagram.com/nasim_shishir"
     }
 ]
 

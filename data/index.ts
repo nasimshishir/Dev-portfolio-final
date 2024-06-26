@@ -1,8 +1,9 @@
-import { SiTailwindcss, SiNextdotjs, SiNestjs, SiBootstrap } from 'react-icons/si';
-import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs, FaPhp, FaWordpress, FaElementor } from 'react-icons/fa';
-import { DiMongodb, DiMysql, DiGithub } from 'react-icons/di';
+import { SiTailwindcss, SiNextdotjs, SiNestjs, SiBootstrap, SiJquery } from 'react-icons/si';
+import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs, FaPhp, FaWordpress, FaElementor, FaWhatsapp } from 'react-icons/fa';
+import { DiMongodb, DiMysql } from 'react-icons/di';
 import { BsGithub } from 'react-icons/bs';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'
+import { Project } from '@/lib/types';
 
 
 export const Links = [
@@ -21,10 +22,6 @@ export const Links = [
     {
         name: "Resume",
         path: "/resume"
-    },
-    {
-        name: "Contact",
-        path: "/contact"
     }
 ]
 
@@ -42,7 +39,7 @@ export const stats = [
         text: 'Tecgnologies Learned'
     },
     {
-        num: 300,
+        num: 288,
         text: 'Code Commits'
     }
 
@@ -52,25 +49,25 @@ export const stats = [
 export const services = [
     {
         title: "Web Development",
-        description: "I build websites and web applications using the latest technologies. I use React, Next.js, and Gatsby to build static websites and apps. I also use Node.js, Express.js, and MongoDB to build APIs and backend services.",
+        description: "I provide expert web development services, specializing in WordPress customization, e-commerce solutions, and full-stack development with Next.js, Nest.js.",
         num: '01',
         href: "/services/web-development"
     },
     {
         title: "Mobile App Development",
-        description: "I build cross-platform mobile apps using React Native and Expo. I also use the Flutter framework to build mobile apps.",
+        description: "I offer professional mobile app development services, creating intuitive and high-performance apps for both iOS and Android.",
         num: '02',
         href: "/services/mobile-app-development"
     },
     {
-        title: "Design",
-        description: "I design websites and mobile apps using Figma and Adobe XD. I also use Adobe Photoshop and Illustrator to create graphics.",
+        title: "UI/UX Design",
+        description: "I provide UI/UX design services, focusing on creating visually stunning and user-friendly interfaces. Delivering designs that enhance user engagement and ensure a seamless user experience across all devices.",
         num: '03',
         href: "/services/design"
     },
     {
-        title: "Data Science",
-        description: "I use Python, JavaScript, and SQL to build data analysis and machine learning models. I also use the NumPy, Pandas, and SciKit-Learn libraries to build models.",
+        title: "Maintenance",
+        description: "I offer reliable web and mobile app maintenance services, ensuring your applications run smoothly and stay up-to-date. I provide regular updates, bug fixes, and performance optimizations to keep your digital solutions performing at their best.",
         num: '04',
         href: "/services/data-science"
     }
@@ -78,7 +75,7 @@ export const services = [
 
 export const about = {
     title: "About me",
-    description: "I'm a full stack developer with a passion for building websites and apps. I'm currently working at a small web development agency.",
+    description: "I'm a full stack developer with a passion for building websites and apps. I'm currently seeking a mid-level WordPress expert position that offers good growth prospects where I can leverage my technical expertise and creativity to build custom web solutions and contribute to the success of forward-thinking companies..",
     info: [
         {
             fieldName: "Name",
@@ -118,7 +115,7 @@ export const about = {
 export const experiences = {
     icon: "",
     title: "My Experience",
-    description: "I have worked with many companies and organizations. I have worked in various roles such as web developer, mobile app developer, and data scientist.",
+    description: "Over 4 Years of Diverse Experience in WordPress Customization, E-commerce Solutions, and Full-Stack Development.",
     experiences: [
         {
             company: "925clo",
@@ -132,7 +129,7 @@ export const experiences = {
         },
         {
             company: "Zealtech Bd",
-            position: "Web developemnt (Intern)",
+            position: "Frontned developer (Intern)",
             duartion: "Dec 2022- May 2023"
         }
     ]
@@ -141,7 +138,7 @@ export const experiences = {
 export const education = {
     icon: "",
     title: "My Education",
-    description: "I have completed my Bachelor's degree in Computer Science and Engineering from the University of Dhaka.",
+    description: "Expertise built through professional courses in web development, continually enhanced by hands-on experience.",
     info: [
         {
             institution: "Programming Hero",
@@ -151,12 +148,7 @@ export const education = {
         {
             institution: "Codeman Bd",
             degree: "WordPress & Woocommerce",
-            duration: "2021"
-        },
-        {
-            institution: "National University",
-            degree: "Bachelor's in Accounting (Honors)",
-            duration: "2014-2018"
+            duration: "2020"
         },
         {
             institution: "Victoria Government College",
@@ -175,7 +167,7 @@ export const education = {
 export const skills = {
     icon: "",
     title: "My Skills",
-    description: "I have worked with many technologies. I have worked with these technologies.",
+    description: "I have worked with these technologies.",
     info: [
         {
             icon: FaHtml5,
@@ -206,16 +198,20 @@ export const skills = {
             name: "javascript"
         },
         {
+            icon: SiJquery,
+            name: "jQuery"
+        },
+        {
+            icon: FaPhp,
+            name: "php"
+        },
+        {
             icon: FaReact,
             name: "React"
         },
         {
             icon: FaNodeJs,
             name: "node.js"
-        },
-        {
-            icon: FaPhp,
-            name: "php"
         },
         {
             icon: DiMongodb,
@@ -244,7 +240,7 @@ export const skills = {
     ]
 }
 
-export const projects = [
+export const projects: Project[] = [
     {
         num: "01",
         category: "frontend",
@@ -252,7 +248,8 @@ export const projects = [
         description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam at cumque culpa ipsum nesciunt nemo saepe qui?",
         stack: [{ name: "WordPress", icon: FaWordpress }, { name: "Elementor", icon: FaElementor }, { name: "Crocoblock" }],
         image: "/assets/work/thumb1.png",
-        liveSite: ""
+        liveSite: "",
+        github: "dfsdfdsf"
     },
     {
         num: "02",
@@ -265,14 +262,13 @@ export const projects = [
 
     },
     {
-        num: "03",
-        category: "fullstack",
-        title: "project 3",
+        num: "06",
+        category: "Business Portfolio",
+        title: "Moariyul Noory Trading Est. Ltd.",
         description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam at cumque culpa ipsum nesciunt nemo saepe qui?",
         stack: [{ name: "React", icon: FaReact }, { name: "Next.Js", icon: SiNextdotjs }, { name: "Tailwindcss", icon: SiTailwindcss }],
-        image: "/assets/work/thumb3.png",
-        liveSite: "",
-        github: ""
+        image: "/assets/work/p-06.png",
+        liveSite: "https://mariyulnoory.com"
     }
 
 ]
@@ -281,6 +277,11 @@ export const contactInfo = [
     {
         icon: FaPhoneAlt,
         title: "Phone",
+        description: "+880 1679 361 019"
+    },
+    {
+        icon: FaWhatsapp,
+        title: "WhatsApp",
         description: "+880 1844 675 244"
     },
     {
