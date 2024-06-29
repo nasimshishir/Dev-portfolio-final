@@ -1,4 +1,4 @@
-import EmailTemplate from '@/components/email-template';
+import EmailTemplate from '@/components/emails/email-template';
 import { Resend } from 'resend';
 import { FormDataType } from '@/lib/types';
 import { NextRequest, NextResponse } from 'next/server';
@@ -10,7 +10,7 @@ export async function POST(req: NextRequest, res: NextResponse) {
 
     try {
         const { data, error } = await resend.emails.send({
-            from: 'Acme <onboarding@resend.dev>',
+            from: 'Portfolio <info@nasimshishir.com>',
             to: ['contact.nasimshishir@gmail.com'],
             subject: 'New message from portfolio',
             react: EmailTemplate({ firstname, lastname, email, phone, service, message }),

@@ -16,6 +16,6 @@ export type FormDataType = {
     lastname: string,
     email: string,
     phone: string,
-    service?: string,
+    service: string,
     message: string
 }
