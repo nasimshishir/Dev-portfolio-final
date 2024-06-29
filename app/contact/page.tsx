@@ -164,7 +164,7 @@ const Contact = () => {
                                     render={({ field }) => (
                                         <FormItem>
                                             <FormControl>
-                                                <Textarea className='h-[200px]' placeholder='Type your message here.' />
+                                                <Textarea {...field} className='h-[200px]' placeholder='Type your message here.' />
                                             </FormControl>
                                             <FormMessage>{form.formState.errors.firstname?.message}</FormMessage>
                                         </FormItem>
