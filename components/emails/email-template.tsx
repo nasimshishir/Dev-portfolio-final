@@ -23,7 +23,6 @@ interface EmailTemplateProps {
     message: string
 }
 
-const baseUrl = "https://nasimshishir.vercel.app";
 
 export const EmailTemplate = ({ firstname, lastname, email, phone, service, message }: EmailTemplateProps) => {
     return (
