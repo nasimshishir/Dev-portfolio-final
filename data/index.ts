@@ -1,4 +1,4 @@
-import { SiTailwindcss, SiNextdotjs, SiNestjs, SiBootstrap, SiJquery } from 'react-icons/si';
+import { SiTailwindcss, SiNextdotjs, SiNestjs, SiBootstrap, SiJquery, SiRedux } from 'react-icons/si';
 import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs, FaPhp, FaWordpress, FaElementor, FaWhatsapp } from 'react-icons/fa';
 import { DiMongodb, DiMysql } from 'react-icons/di';
 import { BsGithub } from 'react-icons/bs';
@@ -208,6 +208,10 @@ export const skills = {
         {
             icon: FaReact,
             name: "React"
+        },
+        {
+            icon: SiRedux,
+            name: "redux"
         },
         {
             icon: FaNodeJs,
