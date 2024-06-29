@@ -6,8 +6,8 @@ export type Project = {
     title: string,
     description: string,
     stack: { name: string, icon?: IconType }[],
-    image: string,
-    liveSite: string,
+    image: string[],
+    liveSite?: string,
     github?: string
 }
 

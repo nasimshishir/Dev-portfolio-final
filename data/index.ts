@@ -120,7 +120,7 @@ export const experiences = {
         {
             company: "925clo",
             position: "Full-stack Developer",
-            duartion: "January 2023- April 2024"
+            duartion: "May 2023- April 2024"
         },
         {
             company: "School of RObotics",
@@ -130,7 +130,7 @@ export const experiences = {
         {
             company: "Zealtech Bd",
             position: "Frontned developer (Intern)",
-            duartion: "Dec 2022- May 2023"
+            duartion: "Dec 2022- April 2023"
         }
     ]
 }
@@ -243,32 +243,41 @@ export const skills = {
 export const projects: Project[] = [
     {
         num: "01",
-        category: "frontend",
-        title: "project 1",
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam at cumque culpa ipsum nesciunt nemo saepe qui?",
+        category: "Educational Website",
+        title: "Imran Academy Ltd",
+        description: "A custom WordPress site featuring a responsive design, seamless user experience, and tailored functionalities to meet client-specific needs, enhancing their online presence and engagement with SEO.",
         stack: [{ name: "WordPress", icon: FaWordpress }, { name: "Elementor", icon: FaElementor }, { name: "Crocoblock" }],
-        image: "/assets/work/thumb1.png",
-        liveSite: "",
-        github: "dfsdfdsf"
+        image: ["/assets/work/p-1/1.png", "/assets/work/p-1/2.png", "/assets/work/p-1/3.png", "/assets/work/p-1/4.png", "/assets/work/p-1/5.png", "/assets/work/p-1/6.png"],
+        liveSite: "https://imranacademyltd.com/",
     },
     {
         num: "02",
-        category: "frontend",
-        title: "project 2",
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam at cumque culpa ipsum nesciunt nemo saepe qui?",
-        stack: [{ name: "WordPress", icon: FaWordpress }, { name: "Elementor", icon: FaElementor }],
-        image: "/assets/work/thumb2.png",
-        liveSite: ""
+        category: "Real Estate Website",
+        title: "Mundo Property",
+        description: "A dynamic real estate website using WordPress, WPBakery, and Elementor. The site features property listings, advanced search filters, and responsive design, providing an intuitive and engaging user experience.",
+        stack: [{ name: "WordPress", icon: FaWordpress }, { name: "Elementor", icon: FaElementor }, { name: "Crocoblock" }],
+        image: ["/assets/work/p-2/1.png", "/assets/work/p-2/2.png", "/assets/work/p-2/3.png", "/assets/work/p-2/4.png", "/assets/work/p-2/5.png", "/assets/work/p-2/6.png"],
+        liveSite: "https://mundop.com"
 
     },
     {
-        num: "06",
-        category: "Business Portfolio",
-        title: "Moariyul Noory Trading Est. Ltd.",
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam at cumque culpa ipsum nesciunt nemo saepe qui?",
+        num: "03",
+        category: "Ai Style Manager",
+        title: "925",
+        description: "Developed the front end for this AI Style Manager using modern web technologies like React, Next.js. The project included interactive UI elements, seamless user experience, and responsive design to enhance user interaction with AI-driven style recommendations.",
         stack: [{ name: "React", icon: FaReact }, { name: "Next.Js", icon: SiNextdotjs }, { name: "Tailwindcss", icon: SiTailwindcss }],
-        image: "/assets/work/p-06.png",
-        liveSite: "https://mariyulnoory.com"
+        image: ["/assets/work/p-3/1.png", "/assets/work/p-3/2.png", "/assets/work/p-3/3.png", "/assets/work/p-3/4.png", "/assets/work/p-3/5.png"],
+        liveSite: "https://925clo.com",
+        github: "https://github.com/nasimshishir/925clo.client"
+    },
+    {
+        num: "04",
+        category: "Business Portfolio",
+        title: "Beyond Think Creative (MECA)",
+        description: "This is a multilingual website created with WordPress using Elementor, Crocoblock, and Polylang. Client showcase their services and update their events through the site in both English & Chinese.",
+        stack: [{ name: "WordPress", icon: FaWordpress }, { name: "Elementor", icon: FaElementor }, { name: "Crocoblock" }],
+        image: ["/assets/work/p-4/1.png", "/assets/work/p-4/2.png", "/assets/work/p-4/3.png", "/assets/work/p-4/4.png", "/assets/work/p-4/5.png", "/assets/work/p-4/6.png"],
+        liveSite: "https://btcmeca.com"
     }
 
 ]
