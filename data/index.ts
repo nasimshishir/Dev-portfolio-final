@@ -54,8 +54,8 @@ export const services = [
         href: "/services/web-development"
     },
     {
-        title: "Mobile App Development",
-        description: "I offer professional mobile app development services, creating intuitive and high-performance apps for both iOS and Android.",
+        title: "Website Security",
+        description: "I offer comprehensive website security optimization and malware removal services. I specialize in protecting your site from threats, ensuring optimal performance, and swiftly removing any malware to keep your website safe and secure.",
         num: '02',
         href: "/services/mobile-app-development"
     },
@@ -271,7 +271,6 @@ export const projects: Project[] = [
         description: "Developed the front end for this AI Style Manager using modern web technologies like React, Next.js. The project included interactive UI elements, seamless user experience, and responsive design to enhance user interaction with AI-driven style recommendations.",
         stack: [{ name: "React", icon: FaReact }, { name: "Next.Js", icon: SiNextdotjs }, { name: "Tailwindcss", icon: SiTailwindcss }],
         image: ["/assets/work/p-3/1.png", "/assets/work/p-3/2.png", "/assets/work/p-3/3.png", "/assets/work/p-3/4.png", "/assets/work/p-3/5.png"],
-        liveSite: "https://925clo.com",
         github: "https://github.com/nasimshishir/925clo.client"
     },
     {

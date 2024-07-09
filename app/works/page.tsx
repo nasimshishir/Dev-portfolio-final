@@ -42,7 +42,7 @@ const Works = () => {
                                             <div className='text-8xl leading-none font-extrabold text-transparent text-outline'>{project.num}</div>
                                             <h2 className='text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize'>{project.category}</h2>
                                             <p className='text-xl font-bold leading-none text-accent'>{project.title}</p>
-                                            <p className='text-white/60'>{project.description}</p>
+                                            <p className='text-white/60 text-[14px]'>{project.description}</p>
                                             <ul className='flex gap-4'>
                                                 {project.stack.map((item, idx) => {
                                                     return (
@@ -58,23 +58,24 @@ const Works = () => {
 
                                             <div className='flex items-center gap-4 ms-5'>
                                                 {/* Live Project Button */}
-                                                {project.liveSite && <Link href={project.liveSite}>
-                                                    <TooltipProvider delayDuration={100}>
-                                                        <Tooltip>
-                                                            <TooltipTrigger className='w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group'>
-                                                                <BsArrowUpRight className='text-white text-3xl group-hover:text-accent' />
-                                                            </TooltipTrigger>
-                                                            <TooltipContent>
-                                                                <p className=''>Live Project</p>
-                                                            </TooltipContent>
-                                                        </Tooltip>
-                                                    </TooltipProvider>
-                                                </Link>}
+                                                {project.liveSite &&
+                                                    <Link href={project.liveSite} target="_blank">
+                                                        <TooltipProvider delayDuration={100}>
+                                                            <Tooltip>
+                                                                <TooltipTrigger className='w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group'>
+                                                                    <BsArrowUpRight className='text-white text-3xl group-hover:text-accent' />
+                                                                </TooltipTrigger>
+                                                                <TooltipContent>
+                                                                    <p className=''>Live Project</p>
+                                                                </TooltipContent>
+                                                            </Tooltip>
+                                                        </TooltipProvider>
+                                                    </Link>}
 
                                                 {/* Github Button */}
                                                 {
                                                     project.github &&
-                                                    <Link href={project.github}>
+                                                    <Link href={project.github} target="_blank">
                                                         <TooltipProvider delayDuration={100}>
                                                             <Tooltip>
                                                                 <TooltipTrigger className='w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group'>
