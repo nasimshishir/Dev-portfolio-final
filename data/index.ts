@@ -251,7 +251,7 @@ export const projects: Project[] = [
         title: "Imran Academy Ltd",
         description: "A custom WordPress site featuring a responsive design, seamless user experience, and tailored functionalities to meet client-specific needs, enhancing their online presence and engagement with SEO.",
         stack: [{ name: "WordPress", icon: FaWordpress }, { name: "Elementor", icon: FaElementor }, { name: "Crocoblock" }],
-        image: ["/assets/work/p-1/1.png", "/assets/work/p-1/2.png", "/assets/work/p-1/3.png", "/assets/work/p-1/4.png", "/assets/work/p-1/5.png", "/assets/work/p-1/6.png"],
+        image: ["/assets/work/p-1/1.webp", "/assets/work/p-1/2.webp", "/assets/work/p-1/3.webp", "/assets/work/p-1/4.webp", "/assets/work/p-1/5.webp", "/assets/work/p-1/6.webp"],
         liveSite: "https://imranacademyltd.com/",
     },
     {
@@ -260,7 +260,7 @@ export const projects: Project[] = [
         title: "Mundo Property",
         description: "A dynamic real estate website using WordPress, WPBakery, and Elementor. The site features property listings, advanced search filters, and responsive design, providing an intuitive and engaging user experience.",
         stack: [{ name: "WordPress", icon: FaWordpress }, { name: "Elementor", icon: FaElementor }, { name: "Crocoblock" }],
-        image: ["/assets/work/p-2/1.png", "/assets/work/p-2/2.png", "/assets/work/p-2/3.png", "/assets/work/p-2/4.png", "/assets/work/p-2/5.png", "/assets/work/p-2/6.png"],
+        image: ["/assets/work/p-2/1.webp", "/assets/work/p-2/2.webp", "/assets/work/p-2/3.webp", "/assets/work/p-2/4.webp", "/assets/work/p-2/5.webp", "/assets/work/p-2/6.webp"],
         liveSite: "https://mundop.com"
 
     },
@@ -270,7 +270,7 @@ export const projects: Project[] = [
         title: "925",
         description: "Developed the front end for this AI Style Manager using modern web technologies like React, Next.js. The project included interactive UI elements, seamless user experience, and responsive design to enhance user interaction with AI-driven style recommendations.",
         stack: [{ name: "React", icon: FaReact }, { name: "Next.Js", icon: SiNextdotjs }, { name: "Tailwindcss", icon: SiTailwindcss }],
-        image: ["/assets/work/p-3/1.png", "/assets/work/p-3/2.png", "/assets/work/p-3/3.png", "/assets/work/p-3/4.png", "/assets/work/p-3/5.png"],
+        image: ["/assets/work/p-3/1.webp", "/assets/work/p-3/2.webp", "/assets/work/p-3/3.webp", "/assets/work/p-3/4.webp", "/assets/work/p-3/5.webp"],
         github: "https://github.com/nasimshishir/925clo.client"
     },
     {
@@ -279,8 +279,17 @@ export const projects: Project[] = [
         title: "Beyond Think Creative (MECA)",
         description: "This is a multilingual website created with WordPress using Elementor, Crocoblock, and Polylang. Client showcase their services and update their events through the site in both English & Chinese.",
         stack: [{ name: "WordPress", icon: FaWordpress }, { name: "Elementor", icon: FaElementor }, { name: "Crocoblock" }],
-        image: ["/assets/work/p-4/1.png", "/assets/work/p-4/2.png", "/assets/work/p-4/3.png", "/assets/work/p-4/4.png", "/assets/work/p-4/5.png", "/assets/work/p-4/6.png"],
+        image: ["/assets/work/p-4/1.webp", "/assets/work/p-4/2.webp", "/assets/work/p-4/3.webp", "/assets/work/p-4/4.webp", "/assets/work/p-4/5.webp", "/assets/work/p-4/6.webp"],
         liveSite: "https://btcmeca.com"
+    },
+    {
+        num: "05",
+        category: "Business Portfolio",
+        title: "Lebas Trendz",
+        description: "This is a portfolio website created with WordPress using Elementor. Client showcase their Products through the site.",
+        stack: [{ name: "WordPress", icon: FaWordpress }, { name: "Elementor", icon: FaElementor }],
+        image: ["/assets/work/p-5/1.webp", "/assets/work/p-5/2.webp", "/assets/work/p-5/3.webp", "/assets/work/p-5/4.webp"],
+        liveSite: "https://lebastrendz.com"
     }
 
 ]
