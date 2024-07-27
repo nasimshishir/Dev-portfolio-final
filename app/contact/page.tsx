@@ -12,7 +12,9 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { Form, FormControl, FormField, FormItem, FormMessage } from '@/components/ui/form'
 import axios from 'axios'
 import { toast } from '@/components/ui/use-toast'
-import { Loader2 } from 'lucide-react'
+import { LibraryIcon, Loader2 } from 'lucide-react'
+import { FaVideo } from "react-icons/fa"
+import Link from "next/link"
 
 const Contact = () => {
 
@@ -179,6 +181,17 @@ const Contact = () => {
 
                     <div className='flex-1 flex items-center xl:justify-end order-1 xl:order-none mb-8 xl:mb-0'>
                         <ul className='flex flex-col gap-10'>
+                            <Link href="https://cal.com/nasimshishir/30min" className="group">
+                                <li className='flex items-center gap-6 border border-accent rounded-lg py-3 pe-4 mb-5'>
+                                    <div className='w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] text-accent rounded-md flex items-center justify-center'>
+                                        <div className='text-[24px] xl:text-[28px]' ><FaVideo /></div>
+                                    </div>
+                                    <div className='flex-1'>
+                                        <p className='text-white/60 group-hover:text-white/80'>Book a Schedule</p>
+                                        <h3 className='text-xl'>30 minnutes of FREE consultation</h3>
+                                    </div>
+                                </li>
+                            </Link>
                             {contactInfo.map((info, idx) => {
                                 return (
                                     <li key={idx} className='flex items-center gap-6'>
