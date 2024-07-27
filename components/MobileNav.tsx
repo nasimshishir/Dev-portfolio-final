@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation'
 import { CiMenuFries } from 'react-icons/ci'
 import Link from 'next/link'
 import { Links } from '@/data'
+import { Button } from "./ui/button"
 
 const MobileNav = () => {
     const pathName = usePathname()
@@ -29,6 +30,9 @@ const MobileNav = () => {
                             )
                         })
                     }
+                    <Link href="/contact">
+                        <Button>Contact</Button>
+                    </Link>
                 </nav>
             </SheetContent>
         </Sheet>

@@ -91,7 +91,7 @@ const Contact = () => {
                                         render={({ field }) => (
                                             <FormItem>
                                                 <FormControl>
-                                                    <Input {...field} placeholder='Firstname' />
+                                                    <Input {...field} placeholder='Firstname' className="w-full" />
                                                 </FormControl>
                                                 <FormMessage>{form.formState.errors.firstname?.message}</FormMessage>
                                             </FormItem>
@@ -103,7 +103,7 @@ const Contact = () => {
                                         render={({ field }) => (
                                             <FormItem>
                                                 <FormControl>
-                                                    <Input {...field} placeholder='Lastname' />
+                                                    <Input {...field} placeholder='Lastname' className="w-full" />
                                                 </FormControl>
                                                 <FormMessage>{form.formState.errors.firstname?.message}</FormMessage>
                                             </FormItem>
@@ -115,7 +115,7 @@ const Contact = () => {
                                         render={({ field }) => (
                                             <FormItem>
                                                 <FormControl>
-                                                    <Input {...field} placeholder='Email address' />
+                                                    <Input {...field} placeholder='Email address' className="w-full" />
                                                 </FormControl>
                                                 <FormMessage>{form.formState.errors.firstname?.message}</FormMessage>
                                             </FormItem>
@@ -127,7 +127,7 @@ const Contact = () => {
                                         render={({ field }) => (
                                             <FormItem>
                                                 <FormControl>
-                                                    <Input {...field} placeholder='Phone number' />
+                                                    <Input {...field} placeholder='Phone number' className="w-full" />
                                                 </FormControl>
                                                 <FormMessage>{form.formState.errors.firstname?.message}</FormMessage>
                                             </FormItem>
@@ -194,13 +194,13 @@ const Contact = () => {
                             </Link>
                             {contactInfo.map((info, idx) => {
                                 return (
-                                    <li key={idx} className='flex items-center gap-6'>
+                                    <li key={idx} className='flex items-center gap-4 lg:gap-6'>
                                         <div className='w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-[#27272c] text-accent rounded-md flex items-center justify-center'>
                                             <div className='text-[24px] xl:text-[28px]' >< info.icon /></div>
                                         </div>
                                         <div className='flex-1'>
                                             <p className='text-white/60'>{info.title}</p>
-                                            <h3 className='text-xl'>{info.description}</h3>
+                                            <h3 className='text-lg lg:text-xl'>{info.description}</h3>
                                         </div>
                                     </li>
                                 )
