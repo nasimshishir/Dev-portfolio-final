@@ -27,7 +27,7 @@ export const Links = [
 
 export const stats = [
     {
-        num: 4,
+        num: 3,
         text: 'Years of Experience'
     },
     {
@@ -115,7 +115,7 @@ export const about = {
 export const experiences = {
     icon: "",
     title: "My Experience",
-    description: "Over 4 Years of Diverse Experience in WordPress Customization, E-commerce Solutions, and Full-Stack Development.",
+    description: "Over 3 Years of Diverse Experience in WordPress Customization, E-commerce Solutions, and Full-Stack Development with Next.js, Nest.js, SQL & NoSQL Databases.",
     experiences: [
         {
             company: "925clo",

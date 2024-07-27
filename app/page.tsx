@@ -16,7 +16,7 @@ const Homepage = () => {
             <span className='text-xl'>Web Developer</span>
             <h1 className='h1 mb-6'>Hello I am <br /> <span className='text-accent'>Nasim</span></h1>
             <p className='max-w-[500px] mb-9 text-white/80'>
-              I am a passionate Full-Stack Web Developer with 4+ Years of Expertise in WordPress and E-commerce Solutions.
+              I am a passionate Full-Stack Web Developer with 3+ Years of Expertise in WordPress, E-commerce Solutions and fullstack development.
             </p>
             <div className='flex flex-col xl:flex-row items-center gap-8'>
               <Link
