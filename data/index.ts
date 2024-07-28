@@ -95,7 +95,7 @@ export const about = {
         },
         {
             fieldName: "Experience",
-            fieldValue: "4+ Years"
+            fieldValue: "3+ Years"
         },
         {
             fieldName: "Email",
