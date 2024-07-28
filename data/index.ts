@@ -75,7 +75,7 @@ export const services = [
 
 export const about = {
     title: "About me",
-    description: "I'm a full stack developer with a passion for building websites and apps. I'm currently seeking a mid-level WordPress expert position that offers good growth prospects where I can leverage my technical expertise and creativity to build custom web solutions and contribute to the success of forward-thinking companies..",
+    description: "I'm a full stack developer with a passion for building websites and apps. I'm currently seeking a Web Developer position that offers good growth prospects where I can leverage my technical expertise and creativity to build custom web solutions and contribute to the success of forward-thinking companies..",
     info: [
         {
             fieldName: "Name",
@@ -129,7 +129,7 @@ export const experiences = {
         },
         {
             company: "Zealtech Bd",
-            position: "Frontned developer (Intern)",
+            position: "Full-Stack developer (Intern)",
             duartion: "Dec 2022- April 2023"
         }
     ]
@@ -147,7 +147,7 @@ export const education = {
         },
         {
             institution: "Codeman Bd",
-            degree: "WordPress & Woocommerce",
+            degree: "WordPress & Ecommerce",
             duration: "2020"
         },
         {
